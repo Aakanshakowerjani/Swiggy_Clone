@@ -1,0 +1,743 @@
+<html>
+    <head>
+        <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .left_div{
+            position:absolute;
+            {% comment %} margin-top:0%; {% endcomment %}
+            top:0px;  
+            left:580px;
+            {% comment %} left-margin:150%; {% endcomment %}
+        }
+
+        .right_div{
+            position:absolute;
+            left:80px;  
+            margin-left:50%;  
+            
+        }
+
+        .logo_div{
+            position:absolute;
+            left:150px;
+            top:50px; 
+        }
+
+        .button {
+            color:black;
+            text-align-:center;
+            margin : 70px 2px;
+            cursor : pointer;
+             position:relative; 
+             padding : 10px 25px;
+             border:none;
+             background:none;
+             font-weight:bold;
+             font-size:15px;
+        }
+        .button:hover{
+            color:red;
+            border:none;
+             background:none;
+        }
+        .button1 {
+            font-weight:bold;
+            font-size:15px;
+            background-color : black;
+            color:white;
+            text-align-:center;
+            margin : 70px 2px;
+            cursor : pointer;
+            position:relative;
+            padding : 10px 25px;
+        }
+        .img{
+            height:500px;
+            width:679px
+        }
+        .logo{
+            height:120px;
+            width:220px;
+        }
+        .first-line{
+            font-size:235%;
+            color:#303030;
+            margin-bottom:1%;
+            font-family:Arial;
+        }
+        .second-line{
+            margin-top:1%;
+            font-weight:normal;
+            font-size:130%;
+            color:#606060;
+            font-family:Arial;
+        }
+        .para1{
+            font-weight:normal;
+            font-size:95%;
+            color:#A8A8A8;
+            font-family: Arial;
+            margin-top:5%;
+        }
+        .para2{
+            margin-top:1%;
+            font-weight:bold;
+            font-size:95%;
+            font-family: Arial;
+        }
+        input::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+        .input1{
+            border:1px solid #A8A8A8;
+            margin-top:4%;
+            margin-bottom:2%;
+            padding:18px 20px;
+            width:90%;
+            outline-color:orange;
+            font-size:105%;
+            font-family:Arial;
+            font-weight:bold;
+        }
+        ::placeholder{
+            color:#989898;
+        }
+        .datalist{
+            display:none;
+        }
+        .c-black{
+            color:#585858;
+        }
+        .c-gray{
+            color:#909090;
+        }
+        .search-box{
+            position:absolute;
+            left:0px;
+            width:100%;          
+        }
+        .search-button{
+            position:absolute;
+            left:488px;
+            {% comment %} padding:20px 20px; {% endcomment %}
+            
+        }
+        .para-div{
+            position:relative;
+            top:100%;
+            margin-top:125px;
+        }
+        .button3{
+            border:none;
+            margin-top:20.5px;
+            padding:21px 30px;
+            cursor:pointer;
+            color:white;
+            font-weight:bold;
+            background-color:#FF8C00;
+            font-size:15px;
+            text-align:center;
+            white-space:nowrap;
+            font-style:Lucida Handwriting;
+        }
+        .black-backy{
+            background-color:#2b1d0e;
+            margin-top:0px;
+            top:500px;
+            height:400px;
+            width:100%;
+            position:relative;
+            margin-bottom:0px;
+        }
+        .backy-1{
+            position:absolute;
+            top:0px;
+            left:180px;
+        }
+        .feature-1{
+            heght:400px;
+            width:100px;
+            margin-left:40px;
+        }
+        .feat-1-heading{
+            color:white;
+            font-size:20px;
+            font-family:Arial;
+            margin-top:28%;
+            text-align:center;
+        }
+        .feat-1-para{
+            color:#D0D0D0;
+            text-align:center;
+        }
+        .backy-2{
+            position:absolute;
+            top:0px;
+            left:670px;
+        }
+        .feature-2{
+            heght:400px;
+            width:110px;
+            margin-left:40px;
+        }
+        .feat-2-heading{
+            color:white;
+            font-size:20px;
+            font-family:Arial;
+            margin-top:22%;
+            text-align:center;
+        }
+        .feat-2-para{
+            color:#D0D0D0;
+            text-align:center;
+        }
+
+        .backy-3{
+            position:absolute;
+            top:10px;
+            left:1160px;
+        }
+        .feature-3{
+            heght:500px;
+            width:120px;
+            margin-left:40px;
+        }
+        .feat-3-heading{
+            color:white;
+            font-size:20px;
+            font-family:Arial;
+            margin-top:23%;
+            text-align:center;
+        }
+        .feat-3-para{
+            color:#D0D0D0;
+            text-align:center;
+        }
+        .third{
+            position:relative;
+            top:500px;
+        }
+        .app-tag{
+            margin-left:180px;
+            position:absolute;
+        }
+        .app-tag-heading{
+            font-size:37px;
+            margin-top:150px;
+            font-family:Arial;
+            color:#303030;
+        }
+        .app-tag-para{
+            color:#888888;
+            font-size:18px;
+            font-family:Arial;
+        }
+        .app-tag-img1{
+            position:absolute;
+            height:50px;
+            width:160px;
+            margin-top:30px;
+        }
+        .app-tag-img2{
+            margin-left:200px;
+            margin-top:30px;
+            position:absolute;
+            height:50px;
+            width:160px;
+        }
+        .app-img{
+            margin-top:0px;
+            top:0px;
+            position:absolute;
+        }
+        .app-img1{
+            position:absolute;
+            margin-left:700px;
+            height:500px;
+            width:400px;
+            margin-top:0px;
+        }
+        .app-img2{
+            position:absolute;
+            margin-left:1050px;
+            height:500px;
+            margin-top:15px;
+            top:70px;
+            width:400px;
+        }
+        .fourth{
+            background-color:black;
+            top:1085px;
+            position:relative;
+            height:425px;
+            width:100%;
+        }
+        .fourth-1{
+            margin-top:50px;
+            color:white;
+            position:absolute;
+            left:155px
+        }
+        .fourth-1-heading{
+            color:gray;
+            font-size:92%;
+            font-family:Arial;
+            margin-top:25px;
+        }
+        .fourth-1-para{
+            font-family:Arial;
+            margin-top:35px;
+            font-size:100%;
+        }
+        .fourth-2{
+            margin-top:50px;
+            color:white;
+            position:absolute;
+            left:490px;
+        }
+        .fourth-2-heading{
+            color:gray;
+            font-size:92%;
+            font-family:Arial;
+            margin-top:25px;
+        }
+        .fourth-2-para{
+            font-family:Arial;
+            margin-top:35px;
+            font-size:100%;
+        }
+        .fourth-3{
+            margin-top:50px;
+            color:white;
+            position:absolute;
+            left:820px;
+        }
+        .fourth-3-heading{
+            color:gray;
+            font-size:92%;
+            font-family:Arial;
+            margin-top:25px;
+        }
+        .fourth-3-para{
+            font-family:Arial;
+            margin-top:35px;
+            font-size:100%;
+        }
+        .fourth-4{
+            position:absolute;
+            left:1150px;
+            margin-top:60px;
+        }
+        .fourth-4-img1{
+            border: 2px solid gray;
+            margin-top:20px;
+            position:relative;
+            height:60px;
+            width:195px;
+            border-radius:10px;
+        }
+        .fourth-4-img2{
+            border: 2px solid gray;
+            margin-top:35px;
+            position:relative;
+            height:60px;
+            width:195px;
+            border-radius:10px;
+        }
+        .last-line{
+            position:absolute;
+            width:80%;
+            color:gray;
+            margin-top:408px;
+            margin-left:150px;
+            border-bottom-color:black;
+            border-left-color:black;
+            border-right-color:black;
+            border-top-color:#A9A9A9;
+            
+            {% comment %} border-top: 1px solid red; {% endcomment %}
+        }
+        .datalist{
+            width:700px;
+              background-color: lightgrey;
+            min-width:500px;
+            max-width:700px;
+            font-size: 11rem;
+            position: absolute;
+        }
+        .option{
+
+        }
+        .animate::before{
+            content:"Hungry?";
+            animation:animate infinite 20s;
+        }
+        @keyframes animate{
+            0%{
+                content:"Unexpected guests?";
+            }
+            20%{
+                content:"Cooking gone wrong?";
+            }
+            40%{
+                content:"Movie marathon?";
+            }
+            60%{
+                content:"Game night?";
+            }
+            80%{
+                content:"Late night at Office?";
+            }
+        }
+
+
+        .Login-Page-Class{
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+        .SignUp-Page-Class{
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+        .cross-span{
+            cursor:pointer;
+            font-size:30px;
+            color:white;
+            font-weight:None;
+            font-style:Arial;
+        }
+        .login-tag{
+            color:#D3D3D3;
+            font-size:30px;
+            font-weight:bold;
+            margin-top:100px;
+            margin-left:320px;
+            margin-bottom:50px;
+        }
+        .or-para{
+            font-size:20px;
+            color:white;
+        }
+        .login-span{
+            font-size:20px;
+            color:orange;
+            cursor:pointer;
+        }
+        .create-span{
+            font-size:20px;
+            color:orange;
+            cursor:pointer;
+        }
+        .login-form{
+            margin-left:50px;
+        }
+        .username{
+            background-color: transparent;
+            position:relative;
+            margin-left:230px;
+            margin-top:80px;
+            line-height: normal;
+            border: solid gray;
+            outline: none;
+            height: 70px;
+            width: 30%;
+            font-size: 17px;
+            padding: 0 20px;
+            padding-top: 22px;
+            box-shadow: none;
+            box-sizing: border-box;
+            border-radius: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 500;
+            color:white;
+        }
+        .pass{
+            background-color: transparent;
+            position:relative;
+            margin-left:230px;
+            margin-top:80px;
+            line-height: normal;
+            border: solid gray;
+            outline: none;
+            height: 70px;
+            width: 30%;
+            font-size: 17px;
+            padding: 0 20px;
+            padding-top: 22px;
+            box-shadow: none;
+            box-sizing: border-box;
+            border-radius: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 500;
+            color:white;
+        }
+        .phoneno{
+            background-color: transparent;
+            position:relative;
+            margin-left:230px;
+            margin-top:80px;
+            line-height: normal;
+            border: solid gray;
+            outline: none;
+            height: 70px;
+            width: 30%;
+            font-size: 17px;
+            padding: 0 20px;
+            padding-top: 22px;
+            box-shadow: none;
+            box-sizing: border-box;
+            border-radius: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 500;
+            color:white;
+        }
+        .submit-button{
+            position:relative;
+            width: 38%;
+            margin-left:200px;
+            margin-top:80px;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            border: none;
+            line-height: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            height: 50px;
+            padding: 0 2rem;
+            color: #fc8019;
+            letter-spacing: 0;
+            color: #fff;
+            background-color: #fc8019;
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+            text-transform: uppercase;
+        }
+        .form-class{
+            height:50%;
+            width:80%;
+        }
+        .form_content{
+            margin-top:15px;
+        }
+        .form-content-labels{
+            color:silver;
+            position:absolute;
+            margin-left:200px;
+            font-size:18px;
+        }
+        .form-content-fields{
+            position:absolute;
+            margin-left:400px;
+        }
+        .message-class{
+            color:green;
+            position:absolute;
+            left:30%;
+            font-size:25px;
+        }
+        </style>
+    </head>
+    <body>
+        {% if messages %}
+            {% for message in messages%}
+                <div class="message-class">{{message}}</div>
+            {% endfor %}
+        {% endif %}
+        <div class="first">
+            <div class= "logo_div">
+                <img class="logo" src="../static/images/logo2.jpeg" alt="not found">
+                <h1 class="first-line"><span class="animate"> </span></h1>
+                <div id="late">
+                    <h2 class="second-line">Order food from favourite restaurants near you.</h2>
+                    <div class="search-box">
+                        <input class="input1" list="locations" placeholder="Enter your delivery location">
+                        <datalist class = "dropdown" id="locations" >
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </div>
+                    <div class ="search-button">
+                        <button class="button3">Find Food</button>
+                    </div>
+                    <div class="para-div"> 
+                        <p class="para1">POPULAR CITIES IN INDIA</p>
+                        <p class="para2">
+                        <span class="c-black">Ahmedabad </span> <span class="c-gray"> Bangalore </span> <span class="c-black">Chennai</span> <span class="c-gray"> Delhi</span> <span class="c-black">Gurgaon</span> <span class="c-gray"> Hyderabad</span> <span class="c-black">Kolkata</span> <span class="c-gray"> Mumbai</span> </br> <span class="c-black">Pune</span> <span class="c-gray"> & more.</span>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class= "left_div">
+                <button class="button" onclick="openLogin()">Login</span>
+                <button class="button1" onclick="openSignUp()">Sign Up</button>  
+            </div>
+            <div class="right_div">
+                <img class="img" src="../static/images/fourth.jpg" alt="Not found">
+            </div>
+        </div>
+
+        <div class="black-backy">
+            <div class="backy-1">
+                <img class="feature-1" src="../static/images/swiggy-1.png" alt="not found">
+                <h1 class="feat-1-heading">No Minimum Order</h1>
+                <p class="feat-1-para">Order in for yourself or for the group,</br>
+                 with no restrictions on order value</p>
+            </div>
+            <div class="backy-2">
+                <img class="feature-2" src="../static/images/swiggy-2.png" alt="not found">
+                <h1 class="feat-2-heading">Live Order Tracking</h1>
+                <p class="feat-2-para">Know where your order is at all times,</br>
+                 from the restaurant to your doorstep</p>
+            </div>
+            <div class="backy-3">
+                <img class="feature-3" src="../static/images/swiggy-3.png" alt="not found">
+                <h1 class="feat-3-heading">Lightning-Fast Delivery</h1>
+                <p class="feat-3-para">Experience Swiggy's superfast delivery</br>
+                 for food delivered fresh & on time</p>
+            </div>
+        </div>
+        <div class="third">
+            <div class="app-img">
+                <img class="app-img1" src="../static/images/swiggy-4.png" alt="not found">
+                <img class="app-img2" src="../static/images/swiggy-5.png" alt="not found">
+            </div>
+            <div class="app-tag">
+                <h1 class="app-tag-heading">Restaurants in</br>
+                your pocket</h1>
+                <p class="app-tag-para">Order from your favorite restaurants & track</br>
+                on the go, with the all-new Swiggy app.</p>
+                <img class="app-tag-img1" src="../static/images/swiggy-7.png" alt="not found">
+                <img class="app-tag-img2" src="../static/images/swiggy-6.png" alt="not found">
+            </div>
+            
+        </div>
+
+        <div class="fourth">
+            <div class="fourth-1">
+                <h1 class="fourth-1-heading">COMPANY</h1>
+                <p class="fourth-1-para">About us </br>
+                                         <br>
+                                         Team </br>
+                                         <br>
+                                         Careers </br>
+                                         <br>
+                                         Swiggy Blog </br>
+                                         <br>
+                                         Bug Bounty </br>
+                                         <br>
+                                         Swiggy Supper </br>
+                                         <br>
+                                         Swiggy Corporate </br>
+                                         </p>
+            </div>
+            <div class="fourth-2">
+                <h1 class="fourth-2-heading">CONTACT</h1>
+                <p class="fourth-2-para">Help & Support </br>
+                                         <br>
+                                         Partner with us </br>
+                                         <br>
+                                         Ride with us </br>
+                                         </p>
+            </div>
+            <div class="fourth-3">
+                <h1 class="fourth-3-heading">LEGAL</h1>
+                <p class="fourth-3-para">Terms & Conditions </br>
+                                        <br>
+                                         Refund & Cancellation </br>
+                                         <br>
+                                         Privacy Policy </br>
+                                         <br>
+                                         Cookie Policy </br>
+                                         <br>
+                                         Offer Terms </br>
+                                         <br>
+                                         Phishing & Fraud </br>
+                                         </p>
+            </div>
+            <div class="fourth-4">
+                <img class ="fourth-4-img1" src="../static/images/swiggy-6.png" alt="not found">
+                <img class ="fourth-4-img2" src="../static/images/swiggy-7.png" alt="not found">
+            </div>
+            <hr class="last-line">
+        </div>
+        <div id="Login-page" class="Login-Page-Class">
+            <div class="login-form">
+                <span class="cross-span" onclick="closeLogin()">X</span>
+                <h1 class="login-tag">Login</h1>
+                <form class="form-class" method="POST">
+                    {% csrf_token %}
+                    <div class="form-class">
+                        <input type="text" class="username" name="username" placeholder="Enter User Name" required/>
+                        <input type="password" class="pass" name="password" placeholder="Enter Password" required/>
+                        <button type="submit" class="submit-button" value="Submit1" name="Submit1">
+                        Login</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div id="SignUp-page" class="SignUp-Page-Class">
+            <div class="login-form" method="POST">
+                <span class="cross-span" onclick="closeSignUp()">X</span>
+                <h1 class="login-tag">Sign Up</h1>
+                <form class="form-class" method="POST">
+                    {% csrf_token %}
+                    {% for fm in form %}
+                    <div class="form_content">
+                        <div class="form-content-labels"> {{fm.label_tag}} </div> <div class="form-content-fields"> {{fm}} </div> {{fm.errors|striptags}} <br><br>
+                    </div>
+                    {% endfor %}
+        
+                    <div class="form-class">
+                        <button type="submit" class="submit-button" value="Submit2" name="Submit2">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </body>
+    <script>
+        function openLogin(){
+            document.getElementById("Login-page").style.width="100%";
+        }
+        function openSignUp(){
+             document.getElementById("SignUp-page").style.width="100%";
+        }
+        function closeLogin(){
+             document.getElementById("Login-page").style.width="0%";
+        }
+        function closeSignUp(){
+             document.getElementById("SignUp-page").style.width="0%";
+        }
+    </script>
+</html>

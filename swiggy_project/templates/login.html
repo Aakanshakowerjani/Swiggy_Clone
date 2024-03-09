@@ -1,0 +1,301 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .left_div{
+            position:absolute;
+            {% comment %} margin-top:0%; {% endcomment %}
+            top:0px;  
+            left:580px;
+            {% comment %} left-margin:150%; {% endcomment %}
+        }
+
+        .right_div{
+            position:absolute;
+            left:80px;  
+            margin-left:50%;  
+            
+        }
+
+        .logo_div{
+            position:absolute;
+            left:150px;
+            top:50px; 
+        }
+        .button {
+            color:black;
+            text-align-:center;
+            margin : 70px 2px;
+            cursor : pointer;
+             position:relative; 
+             padding : 10px 25px;
+             border:none;
+             background:none;
+             font-weight:bold;
+             font-size:15px;
+        }
+        .button:hover{
+            color:red;
+            border:none;
+             background:none;
+        }
+        .button1 {
+            font-weight:bold;
+            font-size:15px;
+            background-color : black;
+            color:white;
+            text-align-:center;
+            margin : 70px 2px;
+            cursor : pointer;
+            position:relative;
+            padding : 10px 25px;
+        }
+        .img{
+            height:500px;
+            width:688px;
+        }
+        .logo{
+            height:120px;
+            width:170px;
+        }
+        .first-line{
+            font-size:235%;
+            color:#303030;
+            margin-bottom:1%;
+            font-family:Arial;
+        }
+        .second-line{
+            margin-top:1%;
+            font-weight:normal;
+            font-size:130%;
+            color:#606060;
+            font-family:Arial;
+        }
+        .para1{
+            font-weight:normal;
+            font-size:95%;
+            color:#A8A8A8;
+            font-family: Arial;
+            margin-top:5%;
+        }
+        .para2{
+            margin-top:1%;
+            font-weight:bold;
+            font-size:95%;
+            font-family: Arial;
+        }
+        input::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+        .input1{
+            border:1px solid #A8A8A8;
+            margin-top:4%;
+            margin-bottom:2%;
+            padding:18px 20px;
+            width:90%;
+            outline-color:orange;
+            font-size:105%;
+            font-family:Arial;
+            font-weight:bold;
+        }
+        ::placeholder{
+            color:#989898;
+        }
+        .datalist{
+            display:none;
+        }
+        .c-black{
+            color:#585858;
+        }
+        .c-gray{
+            color:#909090;
+        }
+        .search-box{
+            position:absolute;
+            left:0px;
+            width:100%;          
+        }
+        .search-button{
+            position:absolute;
+            left:488px;
+            {% comment %} padding:20px 20px; {% endcomment %}
+            
+        }
+        .para-div{
+            position:relative;
+            top:100%;
+            margin-top:125px;
+        }
+        .button3{
+            border:none;
+            margin-top:20.5px;
+            padding:21px 30px;
+            cursor:pointer;
+            color:white;
+            font-weight:bold;
+            background-color:orange;
+            font-size:15px;
+            text-align:center;
+            white-space:nowrap;
+            font-style:Lucida Handwriting;
+        }
+        .black-backy{
+            background-color:#2b1d0e;
+            margin-top:0px;
+            top:500px;
+            height:254px;
+            width:100%;
+            position:relative;
+            margin-bottom:0px;
+        }
+        .backy-1{
+            position:absolute;
+            top:0px;
+            left:180px;
+        }
+        .feature-1{
+            heght:400px;
+            width:100px;
+            margin-left:40px;
+        }
+        .backy-2{
+            position:absolute;
+            top:0px;
+            left:670px;
+        }
+        .feature-2{
+            heght:400px;
+            width:110px;
+            margin-left:40px;
+        }
+        .backy-3{
+            position:absolute;
+            top:10px;
+            left:1160px;
+        }
+        .feature-3{
+            heght:500px;
+            width:120px;
+            margin-left:40px;
+        }
+
+
+        .overlay {
+            float:right;
+            direction: rtl;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.5);
+            overflow-x: hidden;
+            transition-timing-function: linear;
+            transition: 0.5s;
+        }
+        .login-background{
+            height:100%;
+            width:50%;
+            margin-left:0px;
+            margin-top:0px;
+            top:0px;
+            background-color:white;
+        }
+        .create-span{
+            font-size:10px;
+            cursor:pointer;
+            color:orange;
+        }
+        .or-para{
+            font-size:10px;
+        }
+
+        .cross-span{
+            font-size:25px;
+            cursor:pointer;
+        }
+        .login-tag{
+            font-size:30px;
+            font-weight:bold;
+        }
+         
+    </style>
+</head>
+<body>
+        <div class="first">
+            <div class= "logo_div">
+                <img class="logo" src="../static/images/logo1.jpeg" alt="not found">
+                <h1 class="first-line"><span class="animate"> </span></h1>
+                <div id="late">
+                    <h2 class="second-line">Order food from favourite restaurants near you.</h2>
+                    <div class="search-box">
+                        <input class="input1" list="locations" placeholder="Enter your delivery location">
+                        <datalist class = "dropdown" id="locations" >
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </div>
+                    <div class ="search-button">
+                        <button class="button3">Find Food</button>
+                    </div>
+                    <div class="para-div"> 
+                        <p class="para1">POPULAR CITIES IN INDIA</p>
+                        <p class="para2">
+                        <span class="c-black">Ahmedabad </span> <span class="c-gray"> Bangalore </span> <span class="c-black">Chennai</span> <span class="c-gray"> Delhi</span> <span class="c-black">Gurgaon</span> <span class="c-gray"> Hyderabad</span> <span class="c-black">Kolkata</span> <span class="c-gray"> Mumbai</span> </br> <span class="c-black">Pune</span> <span class="c-gray"> & more.</span>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class= "left_div">
+                <span class="button" onclick="openNav()">Login</span>
+
+                <!--<button class="button">Login</button>-->
+                <button class="button1">Sign Up</button>  
+            </div>
+            <div class="right_div">
+                <img class="img" src="../static/images/fourth.jpg" alt="Not found">
+            </div>
+        </div>
+
+        <div class="black-backy">
+            <div class="backy-1">
+                <img class="feature-1" src="../static/images/swiggy-1.png" alt="not found">
+
+            </div>
+            <div class="backy-2">
+                <img class="feature-2" src="../static/images/swiggy-2.png" alt="not found">
+                
+            </div>
+            <div class="backy-3">
+                <img class="feature-3" src="../static/images/swiggy-3.png" alt="not found">
+                
+            </div>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <div class="login-background">
+                <span class="cross-span" onclick="closeNav()">X</span>
+                <h1 class="login-tag">Login</h1>
+                <p class="or-para">or <span class="create-span" onclick="closeNav()">create an account</span></p>
+            </div>
+        </div>
+</body>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+</html>
